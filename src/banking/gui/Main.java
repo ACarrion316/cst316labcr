@@ -3,15 +3,20 @@ package banking.gui;
 import javax.swing.JFrame;
 
 /**
- * main method for running the program.
+ * @name Main.java
+ * @date 01/01/0000
  * @author kevinagary
- *
+ * @description main method for running the program.
  */
 final class Main {
 	/**
 	 * Private constructor to address STYLE issue.
 	 */
 	private Main() {
+	/**
+	 * @name Main
+	 * @description Something.
+	 */
 	}
 	
 	/**
@@ -20,6 +25,10 @@ final class Main {
 	 * @throws Exception as per typical main specifications
 	 */
 	public static void main(final String[] args) throws Exception {
+		/**
+		 * @name main
+		 * @description Initializes the frame for this program's GUI.
+		 */
 
 		if (args.length != 1) {
 			System.out.println("Usage: java FormMain <property file>");
