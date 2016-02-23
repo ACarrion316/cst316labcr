@@ -3,6 +3,7 @@
 	<property name="build" value="build" />
 	<property name="jars" value="jars"/>
 	<property name="given" value="../lab6given.jar"/>
+	<property name ="Main.java" value ="../banking.gui.Main" />
 
         <path id="compile.classpath">
             <pathelement path="${build}/classes"/>  
@@ -24,6 +25,15 @@
 	<target name="build" depends="compile">
 		<copy todir="${build}" file="my.properties"/>
 	</target>
+
+	<target name="run" depends="compile" description="Run the program">
+		<java classname="banking.gui.Main" fork="true">
+		<classpath refid="compile.classpath"/>
+		<arg value = "my.properties" />
+		
+	</java>
+</target>
+
 
 	<target name="clean">
 		<delete dir="${build}" />
