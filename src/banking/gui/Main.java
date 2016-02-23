@@ -3,7 +3,7 @@ package banking.gui;
 import javax.swing.JFrame;
 
 /**
- * @file Main.java
+ * @name Main.java
  * @date 01/01/0000
  * @author kevinagary
  * @description main method for running the program.
@@ -14,7 +14,8 @@ final class Main {
 	 */
 	private Main() {
 	/**
-	 * @className Main
+	 * @name Main
+	 * @description Something.
 	 */
 	}
 	
@@ -25,7 +26,8 @@ final class Main {
 	 */
 	public static void main(final String[] args) throws Exception {
 		/**
-		 * @methodName main
+		 * @name main
+		 * @description Initializes the frame for this program's GUI.
 		 */
 
 		if (args.length != 1) {
